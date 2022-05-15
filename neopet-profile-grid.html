@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+/* Designs*/
+body {
+  background-color:#000000; 
+  background-image:url('https://media1.giphy.com/media/FlodpfQUBSp20/giphy.gif'); 
+  background-repeat:repeat; 
+  background-position:top left; 
+  background-attachment:fixed; 
+  border: dashed #0080c0 2px;
+  
+}
+
+h1{
+  text-align:center; 
+  font-family: Helvetica, sans-serif; 
+  font-variant: small-caps; 
+  letter-spacing: 2px; 
+  color: #0080c0; 
+  background: transparent; 
+  border-bottom: dashed #0080c0 2px; 
+  padding-bottom: 10px;
+}
+
+h2{
+  text-align:center; 
+  font-family: Helvetica, sans-serif; 
+  font-variant: small-caps; 
+  letter-spacing: 2px; 
+  color: white; 
+  background: transparent; 
+  padding-bottom: 10px;
+}
+
+p {
+  text-align:center; 
+  font-family: Helvetica, sans-serif; 
+  font-size: 16px; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-variant: small-caps; 
+  letter-spacing: 1px; 
+  color:#0080c0; 
+  background: transparent;
+}
+
+/* Grids */
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+
+.showcase {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 4 / 1 / 5 / 2; }
+.div8 { grid-area: 4 / 2 / 5 / 3; }
+.div9 { grid-area: 5 / 1 / 6 / 2; }
+.div10 { grid-area: 5 / 2 / 6 / 3; } 
+
+/* Layout */
+
+#photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 20px;
+}
+
+hr {border: 2px dashed #0080c0; margin-bottom: 20px; margin-top: 20px;}
+
+p {margin: 20px;}
+
+</style>
+</head>
+
+<body>
+<h1>An Elephante Page</h1>
+<p>Hello, My name is nopolehullu the Elephante. I am 90000+ hours old.<br> I have a fantastic owner called icetsugumi, who takes great care of me. We have gone on many travels around Neopia. I have seen Terror Mountain, Tyrannia and Mystery Island.</p>'
+
+<div class="parent">
+  <div class="div1">
+  <img id="photo" src="https://images.neopets.com/template_images/elephante_fun1.gif" alt="An image of a Mysterious Island.">
+  </div>
+  <div class="div2"><p>My favourite place was Mystery Island. We played for hours on the beach and did tons of stuff. We played Gormball, practiced some Cheat and even had time to make each other into sand Usuls 😊 </p>
+  </div>
+</div> 
+
+<hr>
+
+<div class="parent">
+  <div class="div1">
+  <p>It is a little known fact that Elephantes love to swim. Whenever it is sunny and warm we all head to the nearest river and have a big splash around.</p>
+  </div>
+  <div class="div2">
+  <img id="photo" src="https://images.neopets.com/template_images/elephante_fun2.gif" alt="An image of a Elephantes splashing in the water.">
+  </div>
+</div> 
+
+<hr>
+
+<h1>So what does a young Elephante like myself enjoy? </h1>
+
+<div class="showcase">
+  <div class="div1"><img id="photo" src="https://images.neopets.com/items/bd_ele_tusks.gif" alt="Image of tuskes with metal covers."><h2>Ultrasteel Attack Tusks</h2></div>
+  <div class="div2"><h2>Not just steel... Ultrasteel!</h2></div>
+  <div class="div3"><img id="photo" src="https://images.neopets.com/items/bd_ele_potion.gif"><h2>Elephante Unguent</h2></div>
+  <div class="div4"><h2>The taste leaves something to be desired, but this elixir is an Elephante 'domer's best friend.</h2></div>
+  <div class="div5"><img id="photo" src="https://images.neopets.com/items/tac_clayvase.gif"><h2>Clay Vase</h2></div>
+  <div class="div6"><h2>A wonderful souvenier from visiting Mystery Island!</h2></div>
+  <div class="div7"><img id="photo" src="https://images.neopets.com/items/pot_ele_cloud.gif"><h2>Cloud Elephante Morphing Potions</h2></div>
+  <div class="div8"><h2>Just imagine all the fun you could have as a CLOUD Elephante...</h2></div>
+  <div class="div9"><img id="photo" src="https://images.neopets.com/items/pet_doglefox.gif"><h2>Doglefoxes</h2></div>
+  <div class="div10"><h2>Any petpet that will go out and bring me back food is alright in my book!</h2></div>
+</div> 
+
+</body>
+</html>
